@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+Body {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1.25em 0 1.25em 0;
+}
+
+nav {
+  background-color: #000;
+}
+
+nav ul li {
+  padding: 0 .5em;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  gap: 3%;
+}
