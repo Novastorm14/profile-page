@@ -7,6 +7,7 @@ html {
 }
 
 Body {
+  font-family: "Lato";
   color: #222;
   line-height: 1.5;
   margin: 0 20% 0 20%;
@@ -43,19 +44,19 @@ h1 {
   height: 50vh;
   background-image: url("/Users/dillonhamblin/Creative Cloud Files/Fall 2022/Web Design 2/Week 3/profile-page/images/Buses.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   text-align: center;
   font-family: 'Bungee Spice';
-  font-size: 2em;
+  font-size: 3em;
+  padding-top: 1.5em;
 }
 
 .grid {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1em;
   grid-template-rows: auto;
-
 }
 
 div:nth-child(1) {
@@ -64,13 +65,14 @@ div:nth-child(1) {
 
 img {
   max-width: 100%;
-  max-height: 30vw;
-  object-fit: cover;
+  height: auto;
+  border: 3px solid #000;
+  border-radius: 2%;
 }
 
-.my-work {
+.mywork {
   grid-column: span 3;
-  margin: 0 auto;
+  margin: 0;
 }
 
 article {
@@ -85,15 +87,15 @@ article {
 }
 
 .flex {
-  background-color: #ccc;
+  background-color: #dadada;
   display: flex;
   gap: .5em;
   align-items: center;
 }
 
-.portfolio {
-  border: 3px solid #000;
-  border-radius: 2%;
+.portfolio:hover img{
+  transform: scale(150%);
+  transition: transform .4s;
 }
 
 footer {
